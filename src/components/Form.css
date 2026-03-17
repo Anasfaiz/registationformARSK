@@ -1033,12 +1033,17 @@
   /* 3. Name + Photo row */
   .name-photo-responsive-row {
     flex-direction: column !important;
-    align-items: center !important;
+    align-items: stretch !important; /* stretch keeps left-stack full-width */
+  }
+
+  .left-stack {
+    width: 100% !important;
   }
 
   .photo-column {
-    margin: 16px auto 0 !important;
     width: 140px !important;
+    margin: 16px auto 0 !important;
+    align-self: center !important; /* center only the photo */
   }
 
   .split-row {
